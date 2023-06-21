@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:ital,wght@0,300;0,400;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+nav{
+    font-family: 'Inter', sans-serif;
+}
+
+nav{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.home{
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.habilidades{
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.text button{
+    border: none;
+    
+}
+
+.text{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+
+}
+
+#container2{
+    border-radius: 100px;
+    background-color: #E0E0E0;
+}
+
