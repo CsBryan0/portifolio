@@ -2,138 +2,233 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Portifólio</title>
-
-    <link rel="stylesheet" href="./src/style.css" />
-
+    <title>Meu Portfólio</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
-  <body class="">
-
-      <!--Introdução página-->
-      <section class="home">
-        <div class="row mt-5">
-          <div class="col-6 p-5" id="container1"> 
-              <p class="">Olá, sou o Bryan! Prazer em te conhecer 🖖</p>
-  
-              <div class="text">
-                  <p class="h1">
-                    Frontend 
-                    <a href="https://github.com/CsBryan0" target="_blank" class="bg-light"><img src="./src/images/git.svg"></a>
-
-                    <a href="https://drive.google.com/file/d/1d9BPSaWGTgyWyoMvf88PNH4oYT2lbC1y/view" target="_blank" ><img src="./src/images/document.svg" alt=""></a>
-                  
-                  </p>
-                  
-                  <p class="h1">DEVELOPER</p>
-              </div>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Meu Portfólio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">Minhas Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projetos">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#educacao">Educação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contatos">Contatos</a> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Introdução -->
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>Olá, sou o Bryan! Prazer em te conhecer 🖖</p>
+            <div class="text">
+              <a
+                href="https://github.com/CsBryan0"
+                target="_blank"
+                class="bg-light"
+                ><img src="./src/images/git.svg"
+              /></a>
+              <a
+                href="https://drive.google.com/file/d/1d9BPSaWGTgyWyoMvf88PNH4oYT2lbC1y/view"
+                target="_blank"
+                ><img src="./src/images/document.svg" alt=""
+              /></a>
+            </div>
           </div>
-  
-          <div class="col-6 p-5" id="container2">
-            <p class="h3">Tenho 21 anos, sou estudante de Análise e Desenvolvimento de Sistemas!</p>
-  
+          <div class="col-md-6">
+            <p class="h3">
+              Sou um Desenvolvedor Backend com habilidades em desenvolvimento de
+              sistemas, resolver problemas e trabalhar em equipe. Motivado e
+              pronto para contribuir com sucesso em projetos.
+            </p>
             <div class="d-flex justify-content-around p-2">
-              <img src="./src/images/html.svg" alt="">
-              <img src="./src/images/css.svg" alt="">
-              <img src="./src/images/javascript.svg" alt="">
+              <img src="./src/images/html.svg" alt="" />
+              <img src="./src/images/css.svg" alt="" />
+              <img src="./src/images/javascript.svg" alt="" />
             </div>
-  
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="habilidades">
-        <div class="d-flex justify-content-center text">
-          <p class="h1">Habilidades</p>
-        </div>
+    <!-- Habilidades -->
+    <section id="habilidades" class="habilidades">
+      <div class="container">
+        <h2 class="text-center">Minhas Habilidades</h2>
         <div class="row">
-
-          <div class="col-1"></div>
-
-          <div class="col-4">
-            <p class="h4 d-flex justify-content-center">HTML</p>
-            <div class="progress">
-              <div class="progress-bar w-100" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Avançado</div>
-            </div>
-
-            
-            <p class="h4 d-flex justify-content-center">CSS</p>
-            <div class="progress">
-              <div class="progress-bar w-75" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Intermediário</div>
-            </div>
-
-            
-            <p class="h4 d-flex justify-content-center">JavaScript</p>
-            <div class="progress">
-              <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Intermediário  </div>
-            </div>
+          <div class="col-md-6">
+            <h4>HTML</h4>
+            <p>Avançado</p>
+            <h4>CSS</h4>
+            <p>Intermediário</p>
+            <h4>React.js</h4>
+            <p>Intermediário</p>
           </div>
-
-          <div class="col-2"></div>
-
-          <div class="col-4">
-             
-            <p class="h4 d-flex justify-content-center">NodeJs</p>
-            <div class="progress">
-              <div class="progress-bar w-25" role="progressbar" style="width: 10%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Iniciante</div>
-            </div>
-
-            <p class="h4 d-flex justify-content-center">Python</p>
-            <div class="progress">
-              <div class="progress-bar w-25" role="progressbar" style="width: 10%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Iniciante</div>
-            </div>
-
-            <p class="h4 d-flex justify-content-center">Bootstrap</p>
-            <div class="progress">
-              <div class="progress-bar w-75" role="progressbar" style="width: 10%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Intermediário</div>
-            </div>
-
+          <div class="col-md-6">
+            <h4>JavaScript</h4>
+            <p>Intermediário</p>
+            <h4>TypeScript</h4>
+            <p>Intermediário</p>
+            <h4>Node.js</h4>
+            <p>Intermediário</p>
           </div>
-
-          <div class="col-1"></div>
-
         </div>
-      </section>
-      <!--Conhecimentos-->
+      </div>
+    </section>
 
-      <!--Projetos-->
-      <section class="projetos">
+    <!-- Seção de Projetos -->
+    <section class="projetos" id="projetos">
+      <div class="container">
+        <h2 class="text-center">Meus Projetos</h2>
+
+        <!-- Projeto 1: Clima Agora -->
+        <div class="projeto">
+          <h3>
+            <a href="https://clima-agora-dusky.vercel.app/" target="_blank"
+              >Clima Agora</a
+            >
+          </h3>
+          <p>
+            Projeto de app para acompanhar a previsão do tempo de cidades ao
+            redor do planeta utilizando a API OpenWeather.
+          </p>
+          <ul>
+            <li>
+              Funcionalidades do projeto:
+              <ul>
+                <li>Pesquisar cidades</li>
+                <li>
+                  Mostrar informações importantes (Temperatura, clima, umidade e
+                  velocidade do vento)
+                </li>
+                <li>Mostrar sugestões de cidades para agilizar a pesquisa</li>
+              </ul>
+            </li>
+            <li>
+              Acesse o projeto em:
+              <a href="https://clima-agora-dusky.vercel.app/" target="_blank"
+                >Clima Agora</a
+              >
+            </li>
+            <li>
+              Tecnologias usadas: HTML | CSS | JavaScript | API OpenWeather
+            </li>
+          </ul>
+        </div>
+
+        <!-- Projeto 2: Biblioteca Virtual -->
+        <div class="projeto">
+          <h3>
+            <a
+              href="https://github.com/CsBryan0/biblioteca-virtual"
+              target="_blank"
+              >Biblioteca Virtual</a
+            >
+          </h3>
+          <p>
+            Sistema de gerenciamento de biblioteca que permite registrar livros,
+            empréstimos e devoluções de maneira eficiente e organizada.
+          </p>
+          <p>Principais Tecnologias Utilizadas:</p>
+          <ul>
+            <li>Frontend: React.js</li>
+            <li>Backend: Node.js com Express.js</li>
+            <li>Banco de Dados: MySQL com Prisma ORM</li>
+          </ul>
+          <p>
+            Para executar este projeto em sua máquina local, siga as etapas no
+            README do repositório.
+          </p>
+          <p>Acesse o projeto em: <a href="https://github.com/CsBryan0/biblioteca-virtual" target="_blank">Biblioteca Virtual</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Educação -->
+    <section id="educacao" class="educacao">
+      <div class="container">
+        <h2 class="text-center">Educação</h2>
         <div class="row">
-          <div class="d-flex justify-content-center text">
-            <p class="h1 ">Projetos</p>
+          <div class="col-md-6">
+            <h4>Formação no IFES</h4>
+            <p>Técnico em Administração</p>
+            <p>Ano de Conclusão: 2019</p>
           </div>
-
-          <!--App Clima-->
-          <div class="col-5">
-            <div id="celular" class="p-5" >
-              <p class="h3 d-flex justify-content-center text"><a href="https://clima-agora-dusky.vercel.app/">Clima Agora</a></p>
-              <img src="./src/images/appclima.png" class="img-fluid img-thumbnail" alt="">
-            </div>
+          <div class="col-md-6">
+            <h4>Estudos na Multivix</h4>
+            <p>Cursando Análise e Desenvolvimento de Sistemas</p>
+            <p>Início dos Estudos: 02/2022</p>
+            <!-- Você pode adicionar mais detalhes sobre seus estudos na Multivix aqui -->
           </div>
-
-
-          <!--Espaço vazio-->
-          <div class="col-2"></div>
-          <!--App Pokemon-->
-          <div class="col-5">
-            <div id="celular" class="p-5" >
-              <p class="h3 d-flex justify-content-center text"><a href="https://pokemon-cards-nine.vercel.app/">PokeCards</a></p>
-              <img src="./src/images/apppokecard.png" class="img-fluid img-thumbnail" alt="">
-            </div>
-          </div>
-
         </div>
+      </div>
+    </section>
 
-      </section>
-
-
+    <!-- Contatos -->
+    <section id="contatos" class="contatos">
+      <div class="container">
+        <h2 class="text-center">Contatos</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h4>LinkedIn</h4>
+            <p>
+              <a href="https://www.linkedin.com/in/bryan-souza-093b3b1b9/" target="_blank"
+                >Meu Perfil no LinkedIn</a
+              >
+            </p>
+            <h4>Currículo</h4>
+            <p>
+              <a href="https://drive.google.com/file/d/1d9BPSaWGTgyWyoMvf88PNH4oYT2lbC1y/view" target="_blank">Meu Currículo</a>
+              
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h4>Email</h4>
+            <p>
+              souzabryan09@gmail.com
+            </p>
+            <h4>Telefone</h4>
+            <p>
+              (27) 99974-2113
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

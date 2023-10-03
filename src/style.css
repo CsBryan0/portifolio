@@ -1,48 +1,218 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:ital,wght@0,300;0,400;1,800&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-   
+/* Reset de Estilos Padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
-    overflow-x: hidden;
+/* Fontes */
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
-nav{
-    font-family: 'Inter', sans-serif;
+/* Espaçamento Global */
+body {
+  padding: 20px;
 }
 
-nav{
-    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+/* Links */
+a {
+  text-decoration: none;
+  color: #007BFF;
+  transition: color 0.3s;
 }
 
-.home{
-    padding-bottom: 20px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+a:hover {
+  color: #0056b3;
 }
 
-.habilidades{
-    padding-bottom: 20px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-.text button{
-    border: none;
-    
+/* Seção de Introdução */
+.home {
+  background-color: #f0f0f0;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-.text{
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    font-weight: 900;
-
+.home h1 {
+  font-size: 2rem;
 }
 
-#container2{
-    border-radius: 100px;
-    background-color: #E0E0E0;
+.home p {
+  font-size: 1.2rem;
 }
 
+.home a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+/* Seção de Habilidades */
+.habilidades {
+  background-color: #f0f0f0;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.habilidades h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.habilidades h4 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+/* Habilidade */
+.habilidade {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de Projetos */
+.projetos {
+  background-color: #f0f0f0;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.projetos h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.projeto {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do Projeto */
+.projeto h3 a {
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.projeto h3 a:hover {
+  color: #007BFF;
+}
+
+/* Descrição do Projeto */
+.projeto p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Principais Tecnologias */
+.projeto ul {
+  list-style-type: none;
+}
+
+.projeto ul li {
+  font-size: 1.2rem;
+}
+
+/* Seção de Educação */
+.educacao {
+  background-color: #f0f0f0;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.educacao h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.formacao {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contatos */
+.contatos {
+  background-color: #f0f0f0;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contatos h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contato {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade para Telas Menores */
+@media (max-width: 768px) {
+  .home,
+  .habilidades,
+  .projetos,
+  .educacao,
+  .contatos {
+    padding: 20px;
+  }
+
+  .home h1 {
+    font-size: 1.5rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
+
+  .home a {
+    font-size: 1rem;
+  }
+
+  .habilidades h2 {
+    font-size: 1.5rem;
+  }
+
+  .habilidades h4 {
+    font-size: 1.2rem;
+  }
+
+  .projeto h3 a {
+    font-size: 1.2rem;
+  }
+
+  .projeto p {
+    font-size: 1rem;
+  }
+
+  .projeto ul li {
+    font-size: 1rem;
+  }
+
+  .formacao h4,
+  .contato h4 {
+    font-size: 1rem;
+  }
+}
