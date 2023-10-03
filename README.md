@@ -2,7 +2,7 @@
 
 Olá, bem vindo a meu portifólio!
 
-<h1>Aqui te mostro minhas habilidades em um site.</h1>
+<h1>Aqui te mostro minhas habilidades e conhecimentos.</h1>
 
 <p>Espero que curta minhas habilidades e conheça mais sobre mim</p>
 
